@@ -12,28 +12,28 @@ We strongly feel that a multi-level web application using specific cryptographic
 2. Server side: Python, Flask, Mysql
             
 ## Index
-<img src="Documentation/Images/SS/index.png" width="85%">
+<p align="center"><img src="Documentation/Images/SS/index.png" width="100%"></p>
 
 ## Login
-<img src="Documentation/Images/SS/login.png" width="85%">
+<p align="center"><img src="Documentation/Images/SS/login.png" width="100%"></p>
 
 ## Dashboard
-<img src="Documentation/Images/SS/dashboard.png" width="85%">
+<p align="center"><img src="Documentation/Images/SS/dashboard.png" width="100%"></p>
 
 ## Meetings
-<img src="Documentation/Images/SS/meetings.png" width="85%">
+<p align="center"><img src="Documentation/Images/SS/meetings.png" width="100%"></p>
 
 ## Generate keys
-<img src="Documentation/Images/SS/generatekeys.png" width="85%">
+<p align="center"><img src="Documentation/Images/SS/generatekeys.png" width="100%"></p>
 
 ## See request
-<img src="Documentation/Images/SS/request.png" width="85%">
+<p align="center"><img src="Documentation/Images/SS/request.png" width="100%"></p>
 
 ## Register
-<img src="Documentation/Images/SS/register.png" width="85%">
+<p align="center"><img src="Documentation/Images/SS/register.png" width="100%"></p>
 
 ## Write a memorandom
-<img src="Documentation/Images/SS/publicmemo.png" width="85%">
+<p align="center"><img src="Documentation/Images/SS/publicmemo.png" width="100%"></p>
 
 ## See a memorandum
-<img src="Documentation/Images/SS/seememo.png" width="85%">
+<p align="center"><img src="Documentation/Images/SS/seememo.png" width="100%"></p>
