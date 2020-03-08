@@ -1,0 +1,20 @@
+{% extends 'base/dashBoardBase.html'%}
+{% block content %}
+
+<br><br><br>
+<div class='row'>
+	<div class="scrollable2">
+		<div class="col s12">
+		    <form class="col s12" id="pubMemo" method="POST"  enctype="multipart/form-data">
+		      	<center>
+			      	{%if contenido%}
+			       		<p>{{issue}}<p>
+			       		<p>{{contenido}}<p>
+			      	{%endif%}
+		    	</center>  
+		    </form>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

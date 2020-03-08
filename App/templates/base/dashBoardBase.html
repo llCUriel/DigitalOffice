@@ -1,0 +1,77 @@
+<html>
+
+<head>
+  <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+  <link type="text/css" rel="stylesheet" href="../../static/css/MatIcons.css"/>
+
+  <link type="text/css" rel="stylesheet" href="../../static/css/materialize.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="../../static/css/dashBoardStyle.css" media="screen,projection" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link type="text/css" rel="stylesheet" href="../../static/css/font-awesome.min.css"  />
+
+  <!-- <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script> -->
+  <script type = "text/javascript" src = "../../static/js/mat.min.js"></script>
+
+  <!-- <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+  <script type = "text/javascript" src = "../../static/js/jquery-2.1.1.min.js"></script>
+
+  <script type = "text/javascript" src = "../../static/js/dashboard.js"></script>
+  <script type = "text/javascript" src = "../../static/js/picker.js"></script>
+  <script type = "text/javascript" src = "../../static/js/select.js"></script>
+  <script type="text/javascript" src="../../static/js/materialize.js"></script>
+
+  <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+  <script type="text/javascript" src="../../static/js/sweetalert.min.js"></script>
+
+  <link rel="shortcut icon" href="../../static/img/logo2.ico" type="image/x-icon"/>
+
+
+
+  <title>Digital Office</title>
+</head>
+
+
+<ul id="dropdown1" class="dropdown-content" method="POST">
+      <li><a href="{{url_for('logout')}}">Profile</a></li>
+      <li><a href="{{url_for('logout')}}">Settings</a></li>
+      <li><a href="{{url_for('logout')}}">Log out</a></li>
+</ul>
+
+
+<body>
+<nav>
+
+
+    <div class="nav-wrapper light-blue accent-4">
+      <ul class="left hide-on-med-and-down">
+        <li><a href="/dashboard"><i class="material-icons left">home</i>Dashboard</a></li>
+        <li><a href="/EmeetingList">Meetings<i class="material-icons left">business_center</i><span class="new badge">4</span></a></li>
+
+
+      </ul>
+
+
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="">Help<i class="material-icons left">help</i></a></li>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <li><a>{{messages[0]}}<i class="material-icons left">person</i></a></li>
+            {% endif %}
+        {% endwith %}
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons right">arrow_drop_down</i></a></li>
+
+
+     </ul>
+    </div>
+
+
+
+  </nav>
+
+  {% block content %}
+  {% endblock%}
+
+
+</body>
+
+</html>

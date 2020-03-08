@@ -1,0 +1,76 @@
+<html>
+
+<head>
+  <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+  <link type="text/css" rel="stylesheet" href="../../static/css/MatIcons.css"/>
+
+  <link type="text/css" rel="stylesheet" href="../../static/css/materialize.css" media="screen,projection" />
+
+  <link type="text/css" rel="stylesheet" href="../../static/css/dashBoardStyle.css" media="screen,projection" />
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link type="text/css" rel="stylesheet" href="../../static/css/font-awesome.min.css"  />
+
+  <!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script> -->
+  <script type="text/javascript" src="../../static/js/jquery-3.4.0.min.js"></script>
+  
+  <!-- <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script> -->
+  <script type = "text/javascript" src = "../../static/js/mat.min.js"></script>
+ 
+  <!-- <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+  <script type = "text/javascript" src = "../../static/js/jquery-2.1.1.min.js"></script>
+
+  <script type = "text/javascript" src = "../../static/js/dashboard.js"></script>
+  <script type = "text/javascript" src = "../../static/js/picker.js"></script>
+  <script type="text/javascript" src="../../static/js/materialize.js"></script>
+  
+  <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+  <script type="text/javascript" src="../../static/js/sweetalert.min.js"></script>
+
+  <link rel="shortcut icon" href="../../static/img/logo2.ico" type="image/x-icon"/>
+  <title>Digital Office</title>
+</head>
+
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">one</a></li>
+  <li><a href="#!">Seetings</a></li>
+  <li class="divider"></li>
+  <li><a href="/">Log Out</a></li>
+</ul>
+
+<nav>
+    <div class="nav-wrapper light-blue accent-4">
+      <ul class="left hide-on-med-and-down">
+        <li><a href="/admindashboard"><i class="material-icons left">home</i>Dashboard</a></li>
+        <li><a href="/CEOmeetingList">Meetings<i class="material-icons left">business_center</i></a></li>
+        <li><a href="/newMeet">Organize meeting<i class="material-icons left">record_voice_over</i></a></li>
+        <li><a href="emitmemorandum">Emit Memorandum<i class="material-icons left">chrome_reader_mode</i></a></li>
+        <li><a href="UsersRequests">Requests<i class="material-icons left">recent_actors</i><span class="new badge">4</span></a></li>
+
+      </ul>
+
+
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="">Help<i class="material-icons left">help</i></a></li>
+        <li><a>CEO<i class="material-icons left">person</i></a></li>
+
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons right">arrow_drop_down</i></a></li>
+
+
+     </ul>
+    </div>
+  </nav>
+
+<style>
+
+</style>
+
+<body>
+
+  {% block content %}
+  {% endblock%}
+
+
+</body>
+
+</html>

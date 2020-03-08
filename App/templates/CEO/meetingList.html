@@ -1,0 +1,49 @@
+{% extends 'base/adminDashBoardBase.html'%}
+{% block content %}
+
+<table class = "striped highlight centered responsive-table">
+  <thead>
+    <tr>
+        <th>#Meeting</th>
+        <th>Date</th>
+        <th>Issue</th>
+        <th>Members</th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <!-- Si tenemos juntas que desplegar -->
+      {% if meetings%}
+      <!-- Por cada junta -->
+        {% for m in meetings%}
+            <tr>
+
+            <!-- Imprimimos su fecha y el issue -->
+            <td class = "green lighten-3">{{m.idMeeting}}</td>
+            <td>{{m.date}}</td>
+            <td>{{m.issue}}</td>
+
+            <td>
+              <!-- Members -->
+                <!-- Todo este for es para mostrar a TODOS los usuarios de la junta -->
+                {% for r in rel%}
+                  {%if r.idMeeting == m.idMeeting%}
+                    {% for u in users %}
+                      {%if u.idPerson == r.idPerson%}
+                          <ul>
+                            <li>{{u.name}} {{u.lastName}}</li>
+                          </ul>
+                      {% endif %}
+                    {% endfor %}
+                  {% endif %}
+                {% endfor %}
+            </td>
+
+            </tr>
+        {% endfor %}
+      {% endif %}
+  </tbody>
+</table>
+
+
+{% endblock %}
